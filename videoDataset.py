@@ -114,18 +114,4 @@ class videoDataset(Dataset):
         sample = {'clip': clip, 'label': self.clipsList[idx][1], 'failedClip': failedClip}
 
         return sample
-'''
-mean = [128, 128, 128]
-transformed_dataset = videoDataset(clipsListFile='trainList.t7',
-                                   rootDir='../../C3D/', channels=3, timeDepth=16, xSize=112, ySize=112, mean=mean,
-                                   transform=transforms.Compose([
-                                       RandomCrop(112)
-                                   ]))
-'''
-'''for i in range(20):
-    sample = transformed_dataset[i]
 
-    print(i, sample['clip'].mean(), sample['label'])
-
-    #if i == 3:
-     #   break'''
