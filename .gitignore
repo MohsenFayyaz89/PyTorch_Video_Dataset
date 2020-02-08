@@ -1,0 +1,4 @@
+*.sh
+/q.log/
+*.pyc
+/.idea/
