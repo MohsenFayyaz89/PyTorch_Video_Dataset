@@ -1,4 +1,4 @@
 *.sh
 /q.log/
 *.pyc
-/.idea/
+/.idea/*
